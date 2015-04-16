@@ -1,0 +1,230 @@
+help()
+read.csv()
+help(read.csv)
+testdata = read.csv("selfquiz-data.csv")
+source("/Users/ryanlupinski/Documents/selfquiz-data.csv")
+dir()
+setwd(dir=/Users/ryanlupinski/documents)
+setwd(/Users/ryanlupinski/documents)
+setwd("Users/ryanlupinski/documents")
+getwd()
+setwd("<extraction folder>/rpux_0.5.0_mac")
+dir90
+dir()
+setwd("<extraction folder>/rpux_0.5.0_mac")
+load(".RData")
+setwd("<extraction folder>/rpux_0.5.0_mac")
+setwd(/Users/ryanlupinski)
+setwd(Users/ryanlupinski)
+dir()
+getwd()
+setwd("Users/ryanlupinski/Documents/R")
+q()
+A = matrix( #
++   c(2, 4, 3, 1, 5, 7), # the data elements #
++   nrow=2,              # number of rows #
++   ncol=3,              # number of columns #
++   byrow = TRUE)        # fill matrix by rows
+A = matrix( #
+   c(2, 4, 3, 1, 5, 7), # the data elements #
+   nrow=2,              # number of rows #
+   ncol=3,              # number of columns #
+   byrow = TRUE)        # fill matrix by rows
+A
+v = list(bob=c(2, 3, 5), john=c("aa", "bb"))
+v
+v["bob"]
+v["bob",]
+v["bob","john"]
+v["bob",]
+v["bob"]
+v[["bob"]]
+v["bob"]
+n = c(2, 3, 5) #
+> s = c("aa", "bb", "cc") #
+> b = c(TRUE, FALSE, TRUE)
+n = c(2, 3, 5) #
+ s = c("aa", "bb", "cc") #
+ b = c(TRUE, FALSE, TRUE)
+df = data.fram(n,s,b)
+df = data.frame(n,s,b)
+df
+df[1]
+df[1,]
+df[,1]
+ds
+df
+v["bob"]
+mtcars
+mtcars["Masda Rx4"]
+mtcars["Mazda Rx4"]
+mtcars["Mazda RX4"]
+mtcars[,"Mazda RX4"]
+mtcars[,"Mazda RX4",]
+mtcars["Mazda RX4"]
+mtcars["Mazda RX4","hp"]
+head(mtcars)
+mtcars
+head(mtcars)
+mtcars[[9]]
+mtcars[["hp"]]
+mtcars$hp
+mtcars[0]
+mtcars[3]
+mtcars[2]
+mtcars["mpg"]
+mtcars[c("mpg","hp"),"mpg"]
+mtcars[c("mpg","hp")]
+mtcars[[c("mpg","hp")]]
+mtcars[c("mpg","hp")]
+mtcars[20]
+mtcars[4]
+mtcars[[3]]
+mtcars("Mazda RX4")
+mtcars("Mazda RX4",)
+mtcars["Mazda RX4"]
+mtcars["Mazda RX4",]
+mtcars["Mazda Rx4",]
+mtcars["Mazda rx4",]
+mtcars["Mazda RX4",]
+mtcars[c("Mazda RX4","Merc 280"),]
+L = mtcars[["am"]] == 0
+L
+mtcars(L)
+mtcars[L,]
+L = mtcars[["am"]] == 1
+mtcars[L,]
+L = mtcars$mpg > 25
+mtcars[L,]
+L = mtcars$mpg > 25 & mtcars[["am"]]
+mtcars[L,]
+L = mtcars$mpg > 25 & mtcars[["am"]] == 0
+mtcars[L,]
+L = mtcars$mpg > 25 & mtcars$cyl == 4
+mtcars[L,]
+L = mtcars$mpg > 20 & mtcars$cyl == 4
+mtcars[L,]
+L = mtcars$mpg > 28 & mtcars$cyl == 4
+mtcars[L,]
+dir()
+mydata = read.csv("selfquiz-data.csv")
+mydata[1]
+mydata[1,]
+mydata(head)
+head(mydata)
+L = mydata$wind < 10
+mydata[L,]
+mydata[,L]
+mydata[L]
+mydata[[L]]
+mydata[L]
+L = mydata$Wind < 10
+mydata[L]
+mydata[L,]
+L = mydata$Wind > 10
+mydata[L,]
+L = mydata$Wind > 20
+mydata[L,]
+mydata[1,15]
+mydata[15,5]
+mydata[1,15]
+mydata = read.csv("selfquiz-data.csv")
+mydata(header)
+header(mydata)
+help(header)
+mydata
+mtcars
+header(mtcars)
+mtcars(header)
+mtcars(head)
+getwd
+getwd()
+library(MASS)
+painters
+painters[[2]]
+painters[[school]]
+painters["school"]
+painters["School"]
+school = painters$School
+school.freq = table(school)
+school.freq
+ozone = mydata$Ozone
+ozone.freq = table(ozone)
+ozone.freq
+cbond(school.freq)
+cbind(school.freq)
+school.relfreq = school.freq/nrow(painters)
+school.relfreq
+barplot(school.freq)
+scores = painters$Scores
+barplot(scores)
+comp.scores = table(scores)
+barplot(comp.scores)
+scores = painters$Scores
+comp.scores = table(scores)
+comp.scores
+scores = painters$Composition
+comp.scores = tables(scores)
+comp.scores = table(scores)
+cbind(comp.scores)
+barplot(comp.scores)
+pie(schoo.freq)
+pie(school.freq)
+school = painters$School
+a_school = school =="A"
+a_painters = painters[a_school,]
+mean(a_painters$Composition)
+tapply(painters$Composition, painters$School, mean)
+help(tapply)
+scores = painters$Composition
+14_or_up = scores > 14
+high.scores = scores . 14
+high.scores = scores > 14
+high.scores
+pie(high.scores)
+scores
+high.scores
+scores = painters$Composition
+scores
+high.scores = table(scores)
+high.scores
+higher.scores = high.scores > 14
+higher.scores
+faithful
+head(faithful)
+duration = faithful$eruptions
+duration
+duration.freq = table(duration)
+duration.freq
+range(duration)
+duration[1]
+breaks = seq(range(duration))
+breaks
+breaks = seq(1.5,5.5, by =0.5)
+break
+breaks
+duration.cut = cut(duration,breaks,right=FALSE)
+duration.freq = table(duration.cut)
+duration.cut
+duration.freq
+cbind(duration.freq)
+head(mtcars)
+hp = mtcars$hp
+hp
+hp.freq = table(hp)
+hp.freq
+range(h)
+range(hp)
+hp.cut = seq(50,350, by = 50)
+hp.dist = table(hp.cut)
+hp.dist
+rbeta?
+?rbeta
+heights = rnorm(10,mean=24,sd=4)
+heights
+heights = rnorm(10,mean=288,sd=4)
+heights
+help(readlines)
+install.packages("slidify")
+git
+dir
